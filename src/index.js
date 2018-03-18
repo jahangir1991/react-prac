@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(
+setInterval(function(){
+	ReactDOM.render(
 
-	<h1>Welcome React learning!</h1>,
+	<h2>{new Date().toLocaleTimeString()}</h2>,
 	document.getElementById('root')
 
 	);
+}, 1000);
+
